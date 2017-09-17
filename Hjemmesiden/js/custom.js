@@ -146,23 +146,59 @@ if ($(window).width() > 992) {
          chart
 *************************/
  $('.language-skills').appear(function() {
-            $('.chart').easyPieChart({
-                easing: 'easeOutBounce',
-                lineWidth: 8,
-                size: 150,
-                scaleColor: false,
-                barColor: '#07cb79',
-                trackColor: '#f7f7f7',
-                animate: 7000,
-                onStep: function(from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-          
-           },
+     $('.chart').easyPieChart({
+         easing: 'easeOutBounce',
+         lineWidth: 8,
+         size: 150,
+         scaleColor: false,
+         barColor: '#009f00',
+         trackColor: '#f7f7f7',
+         animate: 7000,
+         onStep: function (from, to, percent) {
+             $(this.el).find('.percent').text(Math.round(percent));
+         }
+     });
+     $('.chart1').easyPieChart({
+         easing: 'easeOutBounce',
+         lineWidth: 8,
+         size: 150,
+         scaleColor: false,
+         barColor: '#d6ff00',
+         trackColor:'#f7f7f7',
+         animate: 7000,
+         onStep: function (from, to, percent) {
+             $(this.el).find('.percent').text(Math.round(percent));
+         }
+     });
+     $('.chart2').easyPieChart({
+         easing: 'easeOutBounce',
+         lineWidth: 8,
+         size: 150,
+         scaleColor: false,
+         barColor: '#ff7200',
+         trackColor:'#f7f7f7',
+         animate: 7000,
+         onStep: function (from, to, percent) {
+             $(this.el).find('.percent').text(Math.round(percent));
+         }
+     });
+     $('.chart3').easyPieChart({
+         easing: 'easeOutBounce',
+         lineWidth: 8,
+         size: 150,
+         scaleColor: false,
+         barColor: '#ff0c00',
+         trackColor:'#f7f7f7',
+         animate: 7000,
+         onStep: function (from, to, percent) {
+             $(this.el).find('.percent').text(Math.round(percent));
+             }
+     });
+ },
       {
      offset: 400 
  });
+
 
 /*************************
        intro typer
