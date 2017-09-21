@@ -139,7 +139,7 @@ button.button-small:hover { background: #07cb79; }
 .intro-content h1 { font-size: 72px; color: #ffffff; font-weight: bold; text-transform: uppercase; font-weight: 700; font-family: 'Raleway', sans-serif; }
 .intro-content h1 span { font-size: 30px; display: block; font-family: 'Raleway', sans-serif; font-weight: 600; }
 #typer { height: 40px; }
-#typer h2 { font-size: 28px; color: #ffffff; font-weight: 600; text-transform: uppercase; font-family: 'Raleway', sans-serif; }
+#typer h2 { font-size: 28px; color: #ffffff; font-weight: 600; text-transform: none; font-family: 'Raleway', sans-serif; }
 /*scroll-down*/
 .scroll-down { text-align: center; width: 34px; height: 58px; display: inline-block; border-radius: 20px; border:3px solid #fff; position: absolute; left: 50%; bottom: 60px;
 margin-left: -17px; line-height: 50px; }
@@ -230,6 +230,12 @@ margin-left: -17px; line-height: 50px; }
 .resume-block .resume-info h3 { margin-top: 0px; color: #2f3742; font-weight: 600; margin-bottom: 20px; }
 .resume-block.clearfix { margin-bottom: 0px; }
 .resume-block.clearfix .resume-info p { margin-bottom: 0px; }
+.resume.contact-button { height: 5px; position: absolute; bottom: 0; left: 0px; right: 0px; background: #2f3742; transition: all 0.3s ease-in-out;   -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
+.resume.contact-button:hover { background: #07cb79; }
+.resume.contact-button a span { font-size: 16px; display: inline-block; margin-bottom: 0px; color: #fff; line-height: 100px; padding: 0px 20px; transition: all 0.9s ease-in-out;   -webkit-transition: all 0.9s ease-in-out; -o-transition: all 0.9s ease-in-out; -moz-transition: all 0.9s ease-in-out; -ms-transition: all 0.9s ease-in-out; }
+.resume:hover.contact-button { height: 40px; }
+.resume:hover.contact-button a span { line-height: 40px; }
+
 
  /*************************
           my-skill
@@ -406,7 +412,7 @@ table.ui-datepicker-calendar tbody td.highlight  a {   background: #c6c6c6;   co
 /*************************
         contact
 *************************/
-.contact { position: absolute; left: 0px; top:0px; bottom: 0px; background: rgba(47, 55, 66, 0.8); width: 32%; height: 100%; z-index: 999; padding: 50px; }
+.contact { position: absolute; left: 0px; top:0px; bottom: 0px; background: rgba(47, 55, 66, 0.8); width: 32%; height: 100%; z-index: 999; padding: 40px; }
 .contact h2 { color: #ffffff; font-weight: 100; font-size: 40px; } 
 .contact .address { margin-top: 40px; }
 .contact .address ul li { display: block; color: #fff;  margin-bottom: 25px; }

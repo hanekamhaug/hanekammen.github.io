@@ -205,7 +205,7 @@ if ($(window).width() > 992) {
 *************************/
   var win = $(window),
       foo = $('#typer');
-      foo.typer(['<h2>MSc Petroleum Engineering</h2>', '<h2>Front-end developer</h2>', '<h2>BAJAS</h2>' ]);
+      foo.typer(['<h2>MSc Petroleum Engineering</h2>', '<h2>BBA Innovation and Leadership student</h2>', '<h2>Part Owner at SecBase&trade;</h2>' ]);
             win.resize(function(){
                 var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
                 foo.css({
