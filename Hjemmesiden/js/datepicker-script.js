@@ -4,41 +4,22 @@
 /*************************
       Add calendar Events
 *************************/
-         var events = [ 
-            { Title: "On Leave", Date: new Date("05/13/2016") },
-            { Title: "On Leave", Date: new Date("05/24/2016") },
-            { Title: "On Leave", Date: new Date("06/05/2016") },
-            { Title: "On Leave", Date: new Date("06/22/2016") },
-            { Title: "On Leave", Date: new Date("07/11/2016") },
-            { Title: "On Leave", Date: new Date("07/26/2016") },
-            { Title: "On Leave", Date: new Date("07/30/2016") },
-            { Title: "On Leave", Date: new Date("08/02/2016") },
-            { Title: "On Leave", Date: new Date("08/28/2016") },
-            { Title: "On Leave", Date: new Date("09/20/2016") },
-            { Title: "On Leave", Date: new Date("10/26/2016") },
-            { Title: "On Leave", Date: new Date("10/10/2016") },
-            { Title: "On Leave", Date: new Date("11/26/2016") },
-            { Title: "On Leave", Date: new Date("12/02/2016") },
-            { Title: "On Leave", Date: new Date("12/28/2016") },
-            { Title: "On Leave", Date: new Date("01/13/2017") },
-            { Title: "On Leave", Date: new Date("01/24/2017") },
-            { Title: "On Leave", Date: new Date("02/05/2017") },
-            { Title: "On Leave", Date: new Date("03/22/2017") },
-            { Title: "On Leave", Date: new Date("04/02/2017") },
-            { Title: "On Leave", Date: new Date("05/13/2017") },
-            { Title: "On Leave", Date: new Date("05/24/2017") },
-            { Title: "On Leave", Date: new Date("06/05/2017") },
-            { Title: "On Leave", Date: new Date("07/11/2017") },
-            { Title: "On Leave", Date: new Date("07/26/2017") },
-            { Title: "On Leave", Date: new Date("08/02/2017") },
-            { Title: "On Leave", Date: new Date("08/28/2017") },
-            { Title: "On Leave", Date: new Date("09/20/2017") },
-            { Title: "On Leave", Date: new Date("10/26/2017") },
-            { Title: "On Leave", Date: new Date("11/11/2017") },
-            { Title: "On Leave", Date: new Date("11/26/2017") },
-            { Title: "On Leave", Date: new Date("12/02/2017") },
-            { Title: "On Leave", Date: new Date("12/28/2017") }
-        ];
+         var events = [
+            { Title: "Vacation with the boys", Date: new Date("10/05/2017") },
+            { Title: "Vacation with the boys", Date: new Date("10/06/2017") },
+            { Title: "Vacation with the boys", Date: new Date("10/07/2017") },
+            { Title: "Vacation with the boys", Date: new Date("10/08/2017") },
+            { Title: "Visiting family in USA", Date: new Date("10/24/2017") },
+            { Title: "Visiting family in USA", Date: new Date("10/25/2017") },
+            { Title: "Visiting family in USA", Date: new Date("10/26/2017") },
+            { Title: "Visiting family in USA", Date: new Date("10/27/2017") },
+            { Title: "Visiting family in USA", Date: new Date("10/28/2017") },
+            { Title: "Visiting family in USA", Date: new Date("10/29/2017") },
+            { Title: "Visiting family in USA", Date: new Date("10/30/2017") },
+            { Title: "Visiting family in USA", Date: new Date("10/31/2017") },
+            { Title: "Visiting family in USA", Date: new Date("11/01/2017") }
+
+];
         $("#datepicker").datepicker({
             dateFormat: 'DD, d MM, yy',
             beforeShowDay: function(date) {

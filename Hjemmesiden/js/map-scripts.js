@@ -42,7 +42,7 @@
 
     var mapElement = document.getElementById('map-canvas');
 
-    var contentString = '<p><b>Home</b></p><p>This is where I currently live, I am however looking towards east. If you know a good place to rent in Oslo center, hook me up :)</p>';
+    var contentString = '<p><b>Home</b></p><p>This is where I currently live, I am however looking towards east. If you know a good place to rent in Oslo center, hook me up =). Job offer in Oslo? Send it over! Someone you think I should meet? Make the connection!</p>';
 
     var infowindow = new google.maps.InfoWindow({
             content: contentString
