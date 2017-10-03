@@ -9,10 +9,9 @@
 
     function initialize_map() {
 
-        // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
-      var myLatLng = new google.maps.LatLng(60.371635, 5.349709);
+      var myLatLng = new google.maps.LatLng(60.371388, 5.346682);
 
       var mapOptions = {
           zoom: 15,
@@ -24,24 +23,44 @@
           scaleControl: false,
           draggable: true,
 
-        // How you would like to style the map. 
-        // This is where you would paste any style found on Snazzy Maps.
-       styles: [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":1}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":-20}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
+        // paste styles from snazzy maps here
+       styles: [{
+           "featureType":"landscape",
+           "elementType":"labels",
+           "stylers": [
+               {
+                   "visibility": "simplified"
+               },
+               {
+                   "hue": "#ff0000"
+               }
+           ]
+       }
+       ]
+               //,{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":1}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":-20}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
     };
 
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map-canvas');
 
-    // Create the Google Map using our element and options defined above
+    var contentString = '<p><b>Home</b></p><p>This is where I currently live, I am however looking towards east. If you know a good place to rent in Oslo center, hook me up :)</p>';
+
+    var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    // Let's also add a marker while we're at it
+
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(60.371635, 5.349709),
+        position: new google.maps.LatLng(60.371388, 5.346682),
         map: map,
-    icon: 'images/icons/map-marker.png',
+        title: 'Where I currently live',
+    icon: 'images/Icons/Map-Marker-Marker-Outside-Azure-icon.png'
     });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
     }
 
     google.maps.event.addDomListener(window, 'load', initialize_map);
