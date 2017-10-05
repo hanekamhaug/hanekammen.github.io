@@ -42,7 +42,7 @@ a:focus, a:hover { outline: medium none !important; text-decoration: none; -webk
   transition: all 0.5s ease-out 0s;  }
 ol, ul { padding: 0px; margin: 0px; }
 li { list-style: none !important; }
-p { font-size: 14px; color: #9ea8b6; line-height: 24px; }
+p { font-size: 14px; color: #6d727e; line-height: 24px; }
 /*selection*/
 *::-moz-selection { background: #000; color: #ffffff; text-shadow: none; }
 ::-moz-selection { background: #000; color: #ffffff; text-shadow: none; }
@@ -111,7 +111,7 @@ button.button-small:hover { background: #07cb79; }
 .navbar-brand>img { height: 180px; }
 .navbar-default { background: transparent; border: 0px; }
 .navbar-default .navbar-nav > li > a { font-size: 14px; text-transform: uppercase; color: black/*#2f3742*/; font-family: 'Raleway', sans-serif; font-weight: 600; padding: 10px 15px 10px 30px; border-right: 0px solid transparent; }
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { color: #FFFFFF; }
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { color: black; }
 .navbar-default .navbar-nav>li>a.active, .navbar-default .navbar-nav>li>a:hover { background: transparent; color: #07cb79; box-shadow: 15px 0px 0px 0px #07cb79 inset; border-right: 5px solid #07cb79;}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover { background: transparent; color: #07cb79; box-shadow: 15px 0px 0px 0px #07cb79 inset; border-right: 5px solid #07cb79; }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover { background: transparent; color: #07cb79; }
@@ -228,9 +228,10 @@ margin-left: -17px; line-height: 50px; }
 .resume-block .resume-name:hover h3 {color: #07cb79 !important; }
 .resume-block .resume-name span { color: #9ea8b6; font-weight: 600; font-size: 18px; }
 .resume-block .resume-info h3 { margin-top: 0px; color: #2f3742; font-weight: 600; margin-bottom: 20px; }
-.resume-block .resume-info p { color: #797979 }
+.resume-block .resume-info p { color: #2f3742 }
+.resume-block .resume-info li { font-size: 14px; color: #2f3742; line-height: 24px; }
 .resume-block.clearfix { margin-bottom: 0px; }
-.resume-block.clearfix .resume-info p { margin-bottom: 0px; color: #797979 }
+.resume-block.clearfix .resume-info p { margin-bottom: 0px; color: #2f3742 }
 .resume.contact-button { height: 5px; position: absolute; bottom: 0; left: 0px; right: 0px; background: #2f3742; transition: all 0.3s ease-in-out;   -webkit-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; }
 .resume.contact-button:hover { background: #07cb79; }
 .resume.contact-button a span { font-size: 16px; display: inline-block; margin-bottom: 0px; color: #fff; line-height: 100px; padding: 0px 20px; transition: all 0.9s ease-in-out;   -webkit-transition: all 0.9s ease-in-out; -o-transition: all 0.9s ease-in-out; -moz-transition: all 0.9s ease-in-out; -ms-transition: all 0.9s ease-in-out; }
@@ -366,45 +367,6 @@ table.ui-datepicker-calendar tbody td.highlight  a {   background: #c6c6c6;   co
 .ui-datepicker .ui-datepicker-title { line-height: 0.8em; }
 
 /*************************
-         blog
-*************************/
-.blog-block .blog-image { position: relative; }
-.blog-block .blog-image .blog-date { position: absolute; left: 20px; top: 20px; }
-.blog-block .blog-image .blog-date span { background: #07cb79; padding: 10px 15px; text-align: center; font-weight: 600; font-size: 16px; text-transform: uppercase; color: #ffffff; display: block; }
-.blog-info { margin: -25px 10px 10px 10px; background: #f8f9fa; padding: 20px; position: relative; }
-.blog-info .blog-meta span { color: #9ea8b6; display: inline-block; padding-right: 4px; }
-.blog-info .blog-meta p { display: inline-block; font-size: 14px; font-weight: 600; color: #2f3742; padding-right: 12px; margin-bottom: 0px; }
-.blog-info .blog-meta p:nth-child(3) { padding-right: 0px; }
-.blog-info .blog-meta p a { color: #2f3742; }
-.blog-info .blog-meta p a:hover { color: #07cb79; }
-.blog-info .blog-content { margin-top: 20px; }
-.blog-info .blog-content a { font-size: 26px; font-weight: 200; text-transform: capitalize; color: #2f3742; margin-bottom: 15px; display: block; }
-.blog-info .blog-content a:hover { color: #07cb79; }
-.blog-bottom .button-small { display: inline-block; }
-.blog-bottom .button-small a { color: #fff; display: inline-block; font-size: 13px;	 text-transform: capitalize; font-weight: 600; margin-bottom: 0px; }
-.blog-bottom .button-small a:hover { color: #fff; }
-.blog-bottom { margin-top: 20px; }
-.blog-bottom .social { display: inline-block;  }
-.blog-bottom .social ul li { display: inline-block; line-height: 0px; }
-.blog-bottom .social ul li a { font-size: 14px; color: #9ea8b6; padding-left:10px; padding-top: 8px; margin-bottom: 0px; }
-.blog-bottom .social ul li a:hover { color: #07cb79;  }
-.pagination { margin-bottom: 0; }
-
-/*************************
-         testimonials
-*************************/
-.testimonials-block { margin-bottom: 30px; }
-.testimonials-content { background: #f4f5f6; padding: 15px; position: relative; border-radius: 3px; }
-.testimonials-avtar { display: table-cell; vertical-align: middle;  }
-.testimonials-avtar img {  width: 65px; border-radius: 50%; }
-.testimonials-comment { display: table-cell; padding-left: 30px; }
-.testimonials-comment p { margin-bottom: 0px; }
-.testimonials-content:before { content: ""; position: absolute; left: 40px; bottom: -20px; width: 0; height: 0; border-style: solid; border-width: 20px 20px 0 0; border-color: #f4f5f6 transparent transparent transparent; }
-.testimonials-name { margin-top: 35px;  }
-.testimonials-name h4 { color: #07cb79; margin-bottom: 5px; }
-.testimonials-name span { color: #2f3742; font-size: 13px; font-weight: 600; }
-
-/*************************
          google-map
 *************************/
 .google-map .container-fluid { padding-right: 0px; padding-left: 0px; position: relative; }
@@ -429,6 +391,12 @@ table.ui-datepicker-calendar tbody td.highlight  a {   background: #c6c6c6;   co
 .contact .social ul li a:hover { color: #07cb79; }
 .contact .social h4 { color: #fff; text-transform: uppercase; }
 .contact .social p { color: #fff; display: block; margin-bottom: 30px; }
+
+/*************************
+        craft
+*************************/
+.craft .craft-pic1 { margin-top: 30px; position: relative; display: inline-block; }
+.craft .craft-pic2 { margin-top: 30px; position: relative; display: inline-block; }
 
 /*************************
         contact popup
