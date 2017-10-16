@@ -125,11 +125,11 @@ if ($(window).width() > 992) {
 /*************************
      php contact form 
 *************************/
-/*  $( "#contactform" ).submit(function( e ) {
+  $( "#contactform" ).submit(function( e ) {
     $("#ajaxloader").show();
     $("#contactform").hide();
     $.ajax({
-      url:'andreas.hanekamhaug@gmail.com',
+      url:'www.hanekamhaug.com',
       data:$(this).serialize(),
       type:'post',
       success:function(response){
@@ -140,7 +140,7 @@ if ($(window).width() > 992) {
       }
     });
     e.preventDefault();
-  }); */
+  });
 
 /*************************
          chart
@@ -207,7 +207,7 @@ if ($(window).width() > 992) {
       foo = $('#typer');
       foo.typer(['<h2>MSc Petroleum Engineering</h2>', '<h2>BBA Innovation and Leadership student</h2>', '<h2>Part Owner at SecBase&trade;</h2>' ]);
             win.resize(function(){
-                var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+                var fontSize = Math.max(Math.min(win.width() / (10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
                 foo.css({
                     fontSize: fontSize * .3 + 'px'
             });
